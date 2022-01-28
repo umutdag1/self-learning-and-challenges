@@ -1,0 +1,311 @@
+-- Planlama
+
+Veri Toplama
+Tasarım Dökümanı(Proje aşamaları, ekip görev dağılımı, projenin durumun vb.)
+İş birliği
+-- Analiz
+
+İsterleri Kazma(Planlama aşamasında yapılan kararların, ne kadar açık, eksiksiz, hatasız, anlaşılabilir olduğu söyleyen adım.Kısaca, şu soruyu cevaplamak : "Planlama aşamasında istenen özellik detaylı ve eksiksiz açıklanmış mı")
+Risk Analizi (Planlamanın Risklerini keşfetme)
+Kilometre Taşı (Çalışma Takımı Kontrolü)
+-- Tasarım
+
+Mimari(Teknoloji Seçimi, İsterlere cevap verme)
+-- Uygulama
+
+Kod
+Test
+Takip/Trello)
+Dağıtım
+-- Bakım
+
+İş akışının tekrarı ve iyileştirilmesi
+
+-- İsterleri Toplamak Üzere
+
+İş isterlerini incele
+Ürün ekibine düşündürücü sorular sor
+İletişim kur
+Bilgi Paylaş
+Çalışma Ortamını İyileştirme
+Kırmızı Bayrak Kaldırma (Tehlikeleri Saptama ve Diğerleriyle Paylaşma, Destek İsteme)
+
+
+-- Proje Yönetimi
+
+Başlangıç
+Planlama
+Yürütme
+İzleme Kontrol -> Planlama Aşamasına geri dönebilir
+Kapanış
+Başlangıç(Project Charter ve Proje Paydaş Dökümanı Oluşturma) Chart => Business Case(Kod Planı); Proje Paydaş Dökümanı => Paylaştırılacak Kişilerin özellikleri
+Planlama(Bilgi Alanları[Knowledge Areas])
+Ne Yapacağız?
+Nasıl Yapacağız?
+Projenin Bittiğini Nasıl Anlayacağız?
+Bilgi Alanları
+Risk
+İsterler
+Kapsam
+Zamanlama(Schedule)
+Kalite
+Bütçe
+Yürütme(Bir iş ne zaman yapılacağı hakkında önderlik eder)
+İzleme ve Kontrol(Trello, Jiro vb.) => Planlama adımına geri dönülebilir
+Kapanış(Kötü Durumdur.Uyuglama tutmamışsa kapanış verilebilir)
+
+
+-- Toyota Üretim Sistemi Üzerine
+
+Dokuma Tezgahı
+Jidoka(akıllı otomasyon)
+Just In Time
+Verimliliği Yükseltmek
+Her Süreçte Kalite Kontrolü
+
+
+-- Yazılım Tasarımı Yaklaşımları
+
+Yukarıdan Aşağı(Divide and Conquer Yöntemi Uygulama)
+Aşağıdan Yukarı(Object Oriented Yaklaşımı)
+
+
+-- Cohesiın ve Coupling Üzerine
+
+Bağlılık(Coupling) Üzerine (Bağımlılığın Zayıf olması iyi durumdur.)
+Data Bağımlılığı
+Module A - Data -> Module B
+Module A - Structure -> Module B
+Kontrol Bağımlılığı
+Module A - Control Information -> Module B
+Dış Bağımlılık
+Module A -> Module B
+Globallere Bağılılık
+Module A - Module B - Module C -> Globals
+Content Coupling
+Module A (-> Data) - Manipulate -> Data (<- Module B)
+Uyum(Cohensiın) Üzerine
+İlgili birimlerin aynı yerde toplanması(Module)
+
+
+-- Yazılım Mimarisi Desenlerine Giriş
+
+Layered
+Cllient Server
+Master Sleve
+Peer to Peer
+Model View Controller
+Event Driven
+
+
+-- Katmanlı Mimari(Layered)
+
+Presentation Layer(UI) [Closed Layer]
+Business Layer(Backend) [Closed Layer]
+Services Layer [Opened Layer]
+Persistence Layer(DB Access Layer) [Closed Layer]
+Database Layer(Database) [Closed Layer]
+## Closed Layer -> Herbir adımdaki layer kendinden sonraki(ilki hariç) layerlara doğrudan erişemez. Kendinden sonraki layer'a request atması gerekmektedir.
+
+## Opened Layer -> Bu özelliğe sahip layerlara ulaşmaya gerek olmadan sonraki layer'a doğrudan erişilebilir.
+
+Kötü Özellikler: Değişiklikler uygulaması zor, Performans düşük, testable yüksek, deployment yatkınlığı düşük(büyük uygulamalarda sıkıntı oluşabilir)
+-- Client - Server Mimarisi
+
+Client - internet -> Server
+## Örnek İnternet Siteleri
+
+## Merkezi Yapı Vardır.
+
+
+
+-- Master - Slave Mimarisi
+
+Master -> (slave -> solution) - (slave -> solution) - (slave -> solution) -> Result -> Master 'a dönüyor ve döngü tekrarlanıyor.
+## slaveler -> Birbirinden bağımsız çalışıyor. Ve her bir slave kendi solution'ı yaratıyor.
+
+## Örnek verilen şifre text'i çözme
+
+
+
+-- Peer to Peer
+
+Peer <-> Peer <-> Peer <-> Peer
+## Örnek Dosya Paylaşım Sistemi
+
+## Merkezi Yapı Yoktur.
+
+
+
+-- Model View Controller
+
+Controller -> Model, View
+
+
+-- Event Driven
+
+Distributed Asynchronous Architectural Design
+Highly Scalable
+Topologies
+Mediator
+Broker
+Mediator
+Merkezi bir Event Mediator vardır.
+Event Medaitor bir logic tutmaz. Hangi Channel'ın, hangi sırayla çalışcağı bilgisi tutar.
+Event Processor logic'i tutar.
+Her bir event channel'in event processor'ü ayrıdır.
+Broker
+Merkezi bir Event Mediator yoktur.
+Chaning bir yapısı vardır.
+Her bir event channel'in event processor'ü farklıdır ve unique'dir.
+Analiz
+Agility -> High
+Ease Of Deployement -> High
+Testability -> Low
+Performance -> High
+Scalability -> High
+Ease of Development -> Low
+
+
+-- OOP
+
+Encapsulation
+Abstraction
+Inheritance
+Polymorphism
+Abstraction(Gereksiz bilgiyi saklamadır. Örnek : int result = pow(2,3) // 8)
+Encapsulation(public, private [data korunumu])
+Inheritance(Kalıtım)
+Polymorphism(Çok çeşitlilik. Örnek : Parent a = new ChildA(); Parent b = new ChildB(); a.print(); // call print of a b.print(); // call print of b)
+
+
+-- Data Oriented Design(Performans ise bu seçilebilir)
+
+Data
+Hardware
+L1 -> L2 -> L3 -> RAM
+Cache Hit -> bulundu(Örnek: L1 'de istenilen bulundu ve Cache Hit = 1)
+Cache Miss -> bulunmadı(Örnek: L1 'de istenilen bulunmadı ama L2'de bulundu. L1 -> Cache Hit = 0 , Cache Miss = 1, L2 -> Cache Hit = 1, Cache Miss = 0)
+Amaç : Cache Miss azaltmak hatta kaldırmak mümkünse kaldırmak. Datanın memorylerdeki lokasyonları birbirine yakın olmalı. Yani az object olması demek. Buda OOP'nin hiç olmaması ya da az olması demektir.
+
+
+-- Functional Programming
+
+Data manipülasyonu olmayacak. Fonksiyona gönderilen değerlerde işlemleri yap ve döndür der.(Immutable Data Structures'lara welcome'dır.)
+
+
+-- Cyclomatic Complexity
+
+Kodumuzun kalitesini ölçmek için kullanılan yöntem
+Ölçme Kriterleri :
+Okuması zor bir kod
+Düşük kalite bir kod
+Bakım maliyeti
+Test maliyeti
+Geliştirme maliyeti
+Cyclomatic Complexity = E - N + 2P
+E : Uç(Edge) Sayısı
+N : Node Sayısı
+P : Component Sayısı
+## Örnek : 7 - 7 + 2 *1 = 2
+
+Kullanılan Yerler :
+Bir metodun karmaşası
+Bir sınıfın karmaşası
+
+
+-- Halstead Complexity Measures
+
+Bir programın operatörlerden ve operandlardan oluştuğu düşünülen bir ölçme yöntemidir.
+n1 = the number of distinct operators
+n2 = the number of distinct operands
+N1 = the total number of operators
+N2 = the total number of operands
+## Örnek operators : fonksiyon ismi, (), {}, veri tipi, &, +, -, *, (,) , (;) vb.
+
+## Örnek operands(manipüle olabilen obje) : a ,b ,c ,avg, "avg = %d", "%d %d %d", 3 vb.
+
+Program vocabulary => n = n1 + n2
+Program length => N = N1 + N2
+Calculated estimated program length => N' = n1(log2)n1 + n2(log2)n2
+Volume => V = N * (log2)n => Fonksiyon için : 20 ile 1000 arasında olmalı ; File için : 100 ile 8000 arasında olmalı
+Difficulty(Hataya Yatkınlığı) => D = (n1 / 2) * (N2 / n2)
+Effort(uygulama ve anlama zorluğu) => E = D * V
+
+
+-- Software Testing Giriş
+
+White Box(System Test)
+Bir programın fonksiyoniletisi(functionality) yerine, iç structureları ya da çalışmalarını test eden methodtur. (Unit Test var mı, Integration Test var mı, code coverage kontrolü vb.)
+Unit Test (Yazılımcı kendi yapabilir)
+Fonksiyonların doğru çalışıp çalışmadığını kontrol eden yazılımlardır.
+Integration Test (QA ekibiyle birlikle yapılır)
+Integration Test Scenarios
+Big Bang Approach
+Tüm senaryolar(modüller) hazır olana kadar QA'yi bekletiyorsunuz.
+Modüllerin hepsi hazır olmadan test çalıştırılamaz
+Sorunun nerde olduğu büyük sistemler için zor, küçük sistemler için kolaydır.
+Incremental Approach
+Üstüne ekleme yaklaşımıdır
+Çalışmayan bölüm için asıl çözüme yakın ani geçici çözüm yazmak
+QA'yi bekletmeden uyguladığınız geçici çözüme yönlendirerek testi onun üzerinde uygularız.
+Code Coverage
+Test edilme süresi boyunca, çalışan kaynak kodlarının execute oranını test eden yaklaşımdır
+Code coverage yüksekse iyi, düşükse kötü
+Black Box(UX Test)
+İnput biliniyor, output biliniyor, system bilinmiyor.
+Functional Test(Oluşturulan sistemin denenmesi ve verdiği çıktı)
+Non Functional Test(Performans testi, compatability testi)
+Regression Test(Kodta yapılan değişiklik sonrası yapılan test)
+Usability Test
+Ölçeklendirme :
+Easy to use?
+Easy to learn?
+Efficient?
+Memorable?
+Load Test
+Yazılıma yüklenen yüklerin sonucu çıkan sonuçların testi
+Compatibility Test
+Platform Testi
+Compability
+Non-functional
+Stress Test
+Sistemin standartları dışında test yapma(Sistemin limitlerini öğrenme)
+Tourture testing
+Push it to the limits!
+Know your weakness
+Scalability Test
+Büyüyebilirlik testi yapma
+Online User Limit
+Simultaneous
+
+
+-- Kod Dökümasyonu
+
+Knowledge Transfer
+Librarian
+Doxygen(Tool)
+
+
+-- Desirable Characteristic Of a Design ==> Code Complete -> Kitap Tavsiye
+
+Minimum Complexity
+Simple
+Easy to Understand
+Isolation Level => Kodtaki bir parçacığın diğerlerini etkilememe olasılığı(ilgili bölümün çalışabilme olasılığı)
+Yüksek olmalıdır.
+Ease Of Maintenance
+Self-explanatory(Kendini açıklayabilen sistem)
+Yüksek olmalı
+Loose Coupling(Hazır fonksiyon, kütüphane yazdığımızdaki adımlar gibi)
+Abstraction
+Hide Information
+Cost of integration
+Cost of testing
+Cost of maintenance
+Extensibility
+Diğer kod parçalarını etkilemeden, kod parçacığını değiştirme
+Reusability
+Reuse
+Portability
+Move it easily
