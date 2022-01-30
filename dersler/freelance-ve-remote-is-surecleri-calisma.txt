@@ -1,0 +1,319 @@
+-- Freelance Olmak
+
+Kendinin patronu olmak
+Çalışma saatleri değişken ve kendin planlayabilen
+Çevresi olan ya da bir iş kolunda bilinen
+Disiplinli ve çalışma düzenli
+
+
+-- Remote Olmak
+
+Zaman ve mekan bağımlılığı olmadan çalışmak isteyen
+Disiplinli çalışma düzeni olan
+
+
+-- Farklar
+
+Freelancer Olmak
+Kendi işinin patronu olmak bazı yükümlülükler getirir
+Müşterti bulmak
+Müşteri İlişkileri
+Referans arttırma endişesi
+Muhasebe
+Sigorta
+Vergiler
+İş yaptıkça para kazanabilirsiniz
+Remote Olmak
+Bir şirkete bağlı olarak çalışma
+şirketin lokasyonunda çalışmaktan farkı yoktur
+Müşteri bulma derdiniz olmaz
+İkili ilişkilerinizin güçlü olması gerekir(Freelance içinde geçerli)
+Muhasebe,sigorta,vergiler tamamen şirket tarafından karşılanır
+Şirkette işin olmaması sizin değil, şirketin düşünmesi gereken bir konudur.
+-- Yapılan İşin Ürününü Anla
+
+Gereksinim dökümanı isteyin
+İşin içindeki statik ve dinamik bölümleri ayırın.
+SEO çalışmasına ne kadar uyumlu olduğunu analiz edin
+Tasarım Konusunu netleştirin
+Uzun vadede ne kadar gelişime açık bir ürün olacağını öğrenin
+Ücretli servisler kullanıp kullanılmayacağına karar verin
+
+
+-- Gereksinim Dökümanı
+
+İşin kapsamını belirler
+İşin ne kadar sürede biteceğini kafanızda belirler
+Ücretlendirme için bir referanstır
+Proje fazlarını belirleminizi sağlar
+Gereksiz revizelerden sizi korur
+Hukuki olarak bir güvencedir (Mail yoluyla alın, el ile alınacaksa kesinlikle imza alın)
+Sizin daha rahat koşullarda işinizi yapmanızı sağlar
+Gereksinim Dökümanı yoksa projenin bitim müşterinin
+Gereksinim Dökümanı varsa projenin bitimi bize aittir.
+Gereksinim dökümanı olmazsa
+Proje istediğiniz ve beklediğiniz gibi kesinlikle gitmez
+İş olarak referans kaybı olur
+İtibar kaybı olur
+
+
+-- Tasarım Konusunun Netleştirilmesi
+
+Kodlama yapılacak yerin bilgisinin netleşmesi(Backend kodlıyacaksak sadece backend, frontend kodliyacaksak sadece frontend kodlamalıyız) => Tasarımı verdiğimiz karara göre tasarıma başlanır
+Tasarımını kimin tarafından yapılacağını öğrenin
+Hazır bir template kullnıp kullanılmayacağını öğrenin
+Kullanılacaksa mockup (Hazır çizilmiş tasarım) var mı sorun
+Template üzerinden tasarımı kim yapacak? (Önceki adım cevabı)
+Eğer yapmak istemiyorsanız template giydirme işlemi için ek olarak ücret talep edilmeli
+
+
+-- İş Ücret Dağılımı
+
+Eğer ürün uzun vadeliyse
+Bu size bakım ve onarım anlaşması fırsatı yaratır
+Sürekli pasif bir gelir modeli olur
+Proje icerisinde ücretli servis kullanımı olacaksa
+Projenin bütçesine bu servisleri karıştırmamalısınız
+Bu yüzden kullanacakları servisleri sormalıyız
+-- Teklif Formu
+
+Ürünü parçalayarak ayrı ayrı yazın
+Gereksinim dökümanını kapsar
+Teknik anlamda hiç bir ayrıntıyı atlamayın
+Hangi teknolojilerin kullanılabileceği
+ Belki farklı farklı modüllerde farklı teknolojilere ihtiyaç duyacaksınız
+Sunucu özellikleri
+Varsa ücretli servislerin kullanımı
+Projenin bitirme süresi
+Proje fazları
+Tasarımın kabulü (Mockup üzerinden onay)
+Demo ilk gösterim
+1.faz
+2.faz
+Projenin tahmini bitiş süresi
+Ücretlendirme kriterleri
+Projenin bütçesi
+Sunucu maliyetleri
+Varsa ücretli servislerin maliyetleri
+Eğer projeye bir ikiş idaha eklenecekse onların maaliyeti
+Proje sonunda emekleme dönemi (Bbay Sitting) => Müşterinin bug bulması ve düzeltilmesi, program kullanımının öğretilmesi
+Proje sonrasındaki revize maliyetleri
+Küçük revizeler nedir ? => Kısa süre süren küçük değişimler
+Büyük revizeler nedir ? => Uzun süren süren büyük değişimler
+İletişim yöntemleri
+İş müsaitse haftalık yapacağınız toplantılar
+Hangi saat dilimlerinde iş üzretinde çalışacağınız (opsiyonel)
+İletişim saatleri (Tecrübeliyseniz bu madde kesinlikle olmalıdır)
+En önemlisi teklifin geçerli olduğu tarih
+
+
+-- İş bütçesinin hesaplanması
+
+Tecrübene göre ne kadar maaş alıyorsun => MAAŞ
+MAAŞ olarak düşündüğünüz maaşın %20 fazlasını yansıtın.
+Günde araştırmalar hariç kaç saat çalışacaksınız => SAAT
+FORMÜL : GÜNLÜK ÜCRET = MAAŞ / 22
+FORMÜL : SAATLİK ÜCRET = MAAŞ / (22 * SAAT)
+FORMÜL : HARİCİ İS SAATLİK ÜCRET = 1,5 * SAATLİK ÜCRET
+FORMÜL : PROJE ÜCRET = GÜNLÜK ÜCRET * PROJE SÜRESİ
+Ücretlendirme Yöntemleri
+Ücretli Servisler (ÜS)
+Fatura Keseceksiniz (KDV)
+Varsa Sunucu Maliyetleri (SM)
+Varsa Tema / Tasarım Maliyetleri (TM)
+EMEĞİNİZİN ÜCRETİ (EÜ) = PROJE ÜCRET + (HARİCİ İŞ SAATLİK ÜCRETİ * SAAT)
+YENİ PROJE ÜCRET = EÜ + ÜS + SM + TM + KDV
+
+
+-- Odeme ve ara ödemelerin Yöntemi
+
+İşe başlamadan kesinlikle peşinat alın
+Bu sizi korur
+Motivasyonu yüksek tutar
+Ara ödemeler talep etmekten çekinmeyin
+Uzun soluklu proje yapıyorsanız kesinlikle fazlar arasında ödemeler alın
+Ödeme oranları tamamen kişisel olarak belirlenebilir fakat ...
+Peşinat % 40 (Sonraki geçişte ara ödeme)
+1.Faz (Sonraki geçişte ara ödeme)
+2.Faz (Sonraki geçişte ara ödeme)
+N Faz (Sonraki geçişte ara ödeme)
+Proje Bitimi ücreti kalanlar
+
+
+-- Sözleşmede Dikkat Edilmesi Gerekenler
+
+Gereksinim Dökümanı doğru mu ?
+Teknolojiler net mi ?
+Sözleşmede size handikap olabilecek maddeler var mı ?
+İletişim kuralları mevcut mu ?
+Ücretlendirmeler net mi ?
+Ödemeler yapılandırıldı mı ?
+
+
+-- Danışmanlık
+
+Danışmanlık türü
+Senelik
+Çalıştığın kadar
+Nelere dikkat etmeliyiz?
+EN'ler belirlenmeli
+EN FAZLA kaç gün
+EN FAZLA kaç saat
+Hizmet bölgesi belirlenmeli
+Lokasyon
+Remote
+Tabi ki ücretlendirme
+
+
+-- Profesyonel İletişim
+
+İlk Temas
+Durumu özetleyen bir mail atın
+Sonraki süreç
+Mümkünse müşterinin yaptığınız işi görebilmesini sağlayın
+Her gün bilgilendirme maili atın
+Haftada 1 toplantı yapın (Sözleşmede içeren maddelere göre değişebilir)
+Müşterinin habersiz bırakılmaması
+Müşterinin mağdur edilmemesi
+Müşterinin sizi sık boğaz etmemesini sağlamak
+Müşteri ile profesyonel yakınlığı sakın bozmayın
+Bu size kötü bir şekilde yansıyabilir
+Çalışma yönünden
+Emeğinizin karşılığı yönünden
+"Hallederiz" demeyin!
+Alaycı bir tonlama kullanmayın
+Bahane üreten cümlelerden uzak durun
+Problem varsa açık açık söyleyin
+Soru sormaktan çekinmeyin
+Her zaman düzgün görünmeye özen gösterin
+--Email
+ E-mail'de 24 saat kuralı
+Yazı dilinde dikkat edilmesi gerekenler
+Pozitif bir yazı dili geliştirin
+Özel fontlar kullanmayın. E-mail sizi ve şirketinizi yansıtır
+Karşı tarafı incitecek bir kelime seçmediğinizden emin olun
+Çok fazla ünlem (!) kullanmayın
+Karşı tarafa bir anlam ifade emete çalışan noktalardan uzak durun....
+Örnek :  Bunu size söylemiştim aslında....
+"Eğer bitirirsem.." yerine "bitirdiğimde.."
+Büyük harfler kullanmayın.
+Eğer sinirliyseniz mail atmayın.
+Göndermeden önce kontrol edin
+
+
+-- Proje Yönetimi
+
+İlk yapılması gerekenler ve planlamalar
+Ana hatları belirleyin
+Kırılma anlarını belirleyin
+Varsa fazları belirleyin
+Bu belirlediğiniz hatlara son teslim tarihi (Deadline) ekleyin
+Bunları müşteri ile paylaşın
+Proje yönetim araçları nasıl tercih edilmeli?
+Tek çalışıyorsunuz
+Bir ekip ile çalışıyorsanız
+Örnek Proje yöneim araçları
+Trello
+Asana
+Monday
+JIRA
+Azure
+
+
+-- Zaman Yönetimi
+
+Çalışma saatlerinizi NET OLARAK belirleyin
+Gün başında günlük işlerinizi planlayın / yazın
+Her 30 dakikada bir 5 dakikalık molalar verin
+Her 2 saatte bir 20 dakikalık molalar verin
+Gün içerisinde sosyal medyadan ve telefondan uzak durun
+Eğer uzak duramıyorsanız..
+Kendinizi ödüllendirin
+Yaptığınız işler arasında küçük molalar verin
+Ailenizle konuşun
+Sizi gün içinde yok saysınlar (benim yapamadığım gibi)
+İş saatlerin dışında işe kesinlikle bakmayın
+Hayatınızı planlayın
+Haftalık / Aylık / Yıllık
+
+
+--Pitch Deck Nedir ?
+
+İş planınız veya ürününüzle ilgili bilgi veren sunumlar
+Neleri içermeli?
+Giriş Sunumu
+Misyon ve Vizgon
+Takım (Eğer tek kişi değilseniz)
+Analize göre problem
+Çözüm
+Ürünün bölümleri
+İletişim
+Neleri içermemli?
+Sıralı maddelerden uzak durun
+Dikkat dağıtacak unsurlardan uzak durun
+Sunumu okumayın
+Nasıl yapılır?
+Powerpoint(Windows, MacOS)
+KeyNote /(Mac OS)
+LibreOffice (Linux)
+Online Çözümler
+
+
+-- Hazır Kütüphaneler ve İçerikler
+
+CSS Frameworkleri
+Bootstrap
+Tailwind
+Materialize
+Bootstrap Vue
+Vuetify
+Görseller
+Freepik
+Pexels
+Pixabay
+Ikon Paketleri
+Fontawesome
+Fontello
+Iconfinder
+Flaticon
+Icons8
+MaterialCSS
+Hazır Tema Siteleri
+Envato
+Themeforest
+TemplateMonster
+WrapBootstrap
+BootstrapMade
+Eğer hazır bir görsel, tema, içerik kullanıyorsak
+Telif ücreti olabilir
+Bulunan siteleri inidren hazır araçlar
+Uzak durun
+
+
+-- İşin Muhasebe Boyutu
+
+Şirket açmadan yapılabilecekler
+Serbest meslek makbuzu
+Fatura kesen şirketler
+Arkadaşınızın şirketinden fatura kesmek
+Şirket açmadan Sözleşme ile Hukuki açıdan bir hakkım var mıdır ? (Evet, vardır.)
+Şirket nasıl açılır?
+Normal şirket
+Online Şirket
+Mükellef(https://mukellef.co/)
+-- DIKKAT
+
+İletişimi güçlü tutun
+Her bir müşteri referans, müşteri kaybı ise referans kaybı
+Çalışma dilimleri belirleme
+Planlama yapmayı ihmal etmeyin
+Sizi çalışmaktan uzaklaştıran şeylerden uzaklaşın
+Rahat bir çalışma ortamı hazırlama
+İyi bir sandalye
+Güzel ve dağınık olmayan bir masa
+Gözünüze yardımcı olacak monitör(ler)
+Bluelight korumalı gözlük
+Ortam ışığı gözünüzü yormamalı
+
+
+İletişim => gokhan@gkandemir.com
