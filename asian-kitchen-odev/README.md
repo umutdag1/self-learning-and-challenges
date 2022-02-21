@@ -39,12 +39,15 @@ filters.forEach(filter => {
         event: {
             click: (e) => {
                 const menuListSectionElem = document.getElementsByClassName('section-center')[0];
+
                 if (menuListSectionElem.children.length > 0) {
                     menuListSectionElem.innerHTML = '';
                 }
+
                 const menuElems = filter === 'All' ?
                     menu :
                     menu.filter(menuElem => menuElem.category === filter);
+
                 menuElems.forEach(menuElem => {
                     const menuElemOptions = {
                         attributes: {
@@ -61,6 +64,7 @@ filters.forEach(filter => {
                                 </div>
                             `
                     };
+                    
                     const menuDOMElem = createDOMElem("div", menuElemOptions);
                     menuListSectionElem.appendChild(menuDOMElem);
                 })
