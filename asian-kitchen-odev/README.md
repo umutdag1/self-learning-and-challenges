@@ -1,6 +1,8 @@
 # Asian Kitchen's Menu
 
-![giff](https://user-images.githubusercontent.com/57832605/155039117-e761c2d0-8b3a-4022-b39d-712477363db7.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/57832605/155039117-e761c2d0-8b3a-4022-b39d-712477363db7.gif" alt="animated" />
+</p>
 
 ## Installation (Yükleme)
 
