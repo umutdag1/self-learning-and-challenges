@@ -14,7 +14,7 @@ git clone https://github.com/umutdag1/patika/
 
 ```bash
 cd patika/NodeJS/Async-Await_Odev2
-npm start
+node main.js
 ```
 
 ## Example Code (Örnek Kod)
