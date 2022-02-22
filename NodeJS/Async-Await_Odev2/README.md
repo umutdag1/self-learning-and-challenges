@@ -13,7 +13,7 @@ git clone https://github.com/umutdag1/patika/
 ## Usage (Kullanım)
 
 ```bash
-cd patika/NodeJS/Asyn-Await_Odev2
+cd patika/NodeJS/Async-Await_Odev2
 npm start
 ```
 
