@@ -1,7 +1,7 @@
 # To Do List
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/57832605/155050254-96055b70-b1a8-4b5e-85fb-f8514ee8b964.gif" alt="animated" />
+  <img src="https://user-images.githubusercontent.com/57832605/155050621-b962021d-0fad-4359-8274-e266891fd248.gif" alt="animated" />
 </p>
 
 ## Installation (Yükleme)
