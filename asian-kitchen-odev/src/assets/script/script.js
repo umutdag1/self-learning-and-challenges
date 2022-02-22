@@ -10,7 +10,7 @@ const filters = removeDuplicationInArr(
 );
 addElemInArr(filters, "All", 'start'); // Adding "All" in list
 
-// Create Buttons depending on Categories and Adding the DOM Actions, Settings etc. to be shown on 
+// Create Buttons depending on Categories and Adding the DOM Actions, Settings etc. to be shown on HTML
 filters.forEach(filter => {
     const filterBtnOptions = {
         attributes: {
