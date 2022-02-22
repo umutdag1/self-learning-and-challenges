@@ -9,6 +9,8 @@ const inputRules = {
 const input = document.getElementById("task");
 const list = document.getElementById("list");
 
+const localStorageList = [];
+
 loadListFromLocalStorage();
 
 addBtn.addEventListener('click', () => {
@@ -27,7 +29,6 @@ addBtn.addEventListener('click', () => {
     if (isOK) {
         addToList(inputText);
         setInputText("");
-        addToLocalStorage(inputText);
     }
 });
 
@@ -53,12 +54,25 @@ function taskIsDone(e) {
 }
 
 function addToLocalStorage(text) {
-    localStorage.setItem(text, text);
+    localStorageList.push(text);
+    setLocalStorage();
 }
 
-function removeFromLocalStorage(key) {
-    if (key) {
-        localStorage.removeItem(key);
+function setLocalStorage() {
+    if (localStorageList.length === 0) {
+        clearLocalStorage();
+    } else {
+        localStorage.setItem("list", JSON.stringify(localStorageList));
+    }
+}
+
+function removeFromLocalStorage(text) {
+    if (text) {
+        const index = localStorageList.findIndex(strText => strText === text);
+        if (index !== -1) {
+            localStorageList.splice(index, 1);
+        }
+        setLocalStorage();
     }
 }
 
@@ -67,14 +81,10 @@ function clearLocalStorage() {
 }
 
 function loadListFromLocalStorage() {
-    const storageLen = localStorage.length;
-
-    for (let i = 0; i < storageLen; i++) {
-        const itemKey = localStorage.key(i);
-        const item = localStorage.getItem(itemKey);
-        if (item) {
-            addToList(item, false);
-        }
+    const list = localStorage.getItem("list");
+    if (list) {
+        const arr = JSON.parse(list);
+        arr.forEach(text => addToList(text, false));
     }
 }
 
@@ -86,9 +96,12 @@ function removeFromList(e) {
 }
 
 function addToList(text, isAdded = true) {
-    if (localStorage.getItem(text) && isAdded) {
-        fireToast("Zaten bunu ekledin.");
-        return;
+    if (isAdded) {
+        const isExistInStorage = localStorageList.find(strText => strText === text);
+        if (isExistInStorage) {
+            fireToast("Zaten bunu ekledin.");
+            return;
+        }
     }
 
     let liElem = createHTMLElem("li", {
@@ -107,6 +120,8 @@ function addToList(text, isAdded = true) {
             "class": `close`
         }
     });
+
+    addToLocalStorage(text);
 
     liElem.appendChild(deleteBtn);
     list.appendChild(liElem);
