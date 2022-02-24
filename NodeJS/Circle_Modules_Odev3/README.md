@@ -14,7 +14,7 @@ git clone https://github.com/umutdag1/patika/
 
 ```bash
 cd patika/NodeJS/Circle_Modules_Odev3
-node main.js
+node index.js
 ```
 
 ## Example Code (Örnek Kod)
