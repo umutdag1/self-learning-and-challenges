@@ -1,5 +1,9 @@
 # Async-Await 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/57832605/155473925-edb181d3-5760-4bb7-a186-6c0219e5aa37.png" alt="animated" />
+</p>
+
 ## Installation (Yükleme)
 
 Use the git clone command to clone the project to local.

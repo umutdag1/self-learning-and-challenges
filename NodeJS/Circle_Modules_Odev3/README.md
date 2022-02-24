@@ -1,5 +1,9 @@
 # Circle Modules
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/57832605/155474585-3a8891da-687b-49e4-93d8-3ecf2436c704.png" alt="animated" />
+</p>
+
 ## Installation (Yükleme)
 
 Use the git clone command to clone the project to local.
