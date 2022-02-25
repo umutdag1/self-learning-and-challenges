@@ -1,9 +1,11 @@
 // Test Case 1
 //const RULES = ["J>B", "B<S", "D>J"];
 // Test Case 2
-const RULES = ["J>B", "B<S", "A>B", "B>C", "A<D"];
+//const RULES = ["J>B", "B<S", "A>B", "B>C", "A<D"];
 // Test Case 3
-//const RULES = ["A>B", "B>C", "A<D"];
+const RULES = ["A>B", "B>C", "A<D"];
+// Test Case 4
+//const RULES = ["A>B", "A<C", "C<Z"];
 
 const letters = getUniqueArr(
     getLetters()
