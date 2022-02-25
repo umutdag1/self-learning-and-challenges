@@ -1,4 +1,4 @@
-# FS Module Prompt
+# FS Module
 
 ## Installation (Yükleme)
 
