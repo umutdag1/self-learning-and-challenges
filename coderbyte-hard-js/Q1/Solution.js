@@ -1,7 +1,7 @@
 // Test Case 1
-const RULES = ["J>B", "B<S", "D>J"];
+//const RULES = ["J>B", "B<S", "D>J"];
 // Test Case 2
-//const RULES = ["J>B", "B<S", "A>B", "B>C", "A<D"];
+const RULES = ["J>B", "B<S", "A>B", "B>C", "A<D"];
 // Test Case 3
 //const RULES = ["A>B", "B>C", "A<D"];
 
@@ -10,7 +10,7 @@ const letters = getUniqueArr(
 );
 
 console.log("Given Letters : ", letters);
-console.log("Given Letters Rules : ", getLettersRules());
+console.log("Given Letters Rules : ", RULES);
 
 const result = doLineOrdering(letters);
 
