@@ -14,7 +14,7 @@ console.log("Given Letters Rules : ", getLettersRules());
 
 const result = doLineOrdering(letters);
 
-console.log(result);
+console.log("Result : ", result);
 
 function doLineOrdering(letters) {
     const lettersRules = getLettersRules();
