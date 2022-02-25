@@ -22,7 +22,14 @@ updateJSONFile = (name, data) => {
     createJSONFile(name,readData);
 }
 
+deleteJSONFile = (name) => fs.unlinkSync(`${name}.json`);
+
 createJSONFile(FILE_NAME, DATA);
 console.log("Before Update", readJSONFile(FILE_NAME));
 updateJSONFile(FILE_NAME, NEW_DATA);
 console.log("After Update", readJSONFile(FILE_NAME));
+setTimeout(() => {
+    deleteJSONFile(FILE_NAME);
+    console.log(`${FILE_NAME}.json removed`);
+}, 3000);
+console.log(`${FILE_NAME}.json will be removed in 3 seconds`);
