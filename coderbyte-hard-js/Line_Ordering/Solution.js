@@ -113,16 +113,6 @@ function getLettersRules() {
     );
 }
 
-function removeLetterRule(stackLetters, lettersRules) {
-    Object.values(lettersRules).forEach(letterRules => {
-        for (const [index, letterRule] of letterRules) {
-            if (stackLetters.includes(letterRule)) {
-                letterRules.splice(index, 1);
-            }
-        }
-    });
-}
-
 function getLetters() {
     return RULES.reduce((firstArr, rule) => {
         const separator = rule[1];
