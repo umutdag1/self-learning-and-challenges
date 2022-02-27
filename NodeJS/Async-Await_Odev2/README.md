@@ -1,7 +1,7 @@
 # Async-Await 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/57832605/155473925-edb181d3-5760-4bb7-a186-6c0219e5aa37.png" alt="animated" />
+  <img src="https://user-images.githubusercontent.com/57832605/155864502-5ca93465-8a9a-4b2d-b422-0b732a2c10e7.png" alt="animated" />
 </p>
 
 ## Installation (Yükleme)

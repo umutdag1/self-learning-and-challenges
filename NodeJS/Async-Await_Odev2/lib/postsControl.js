@@ -9,6 +9,7 @@ const addPost = ({ name, desc }) => {
             name : ${post?.name}, 
             desc : ${post?.desc} 
         }`);
+        posts.push(post);
     } else {
         promise = Promise.reject(`Error : { 
             name : ${name}, 
