@@ -95,7 +95,3 @@ function getIndexOfSearchStrInArray(search, arr) {
 function getNonSpacesStr(str) {
     return getCharArray(new RegExp("\\s"), str).join("");
 }
-
-function getCopyOfObject(obj) {
-    return JSON.parse(JSON.stringify(obj));
-}
