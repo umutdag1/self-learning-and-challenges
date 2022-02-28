@@ -15,7 +15,7 @@ showResult(onlyCheckOne, onlyStatus);
 /* Handling Word Functions */
 
 function showResult(onlyCheckOne, onlyStatus) {
-    if(!onlyCheckOne) {
+    if (!onlyCheckOne) {
         onlyStatus = false;
     }
 
@@ -69,11 +69,10 @@ function getPalindromPermutationsOfWordStatus(charArr) {
     const countCharObj = getCountOfChar(charArr);
     const newCharArrCounts = Object.values(countCharObj);
 
+    const oddCounts = newCharArrCounts.filter(count => count % 2 !== 0);
     if (isArrLengthOdd) {
-        const oddCounts = newCharArrCounts.filter(count => count % 2 !== 0);
         return oddCounts.length === 1 ? true : false;
     } else {
-        const oddCounts = newCharArrCounts.filter(count => count % 2 !== 0);
         return oddCounts.length === 0 ? true : false;
     }
 }
