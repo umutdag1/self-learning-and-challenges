@@ -68,8 +68,10 @@ function getPalindromPermutationsOfWord(charArr, charSpaceIndexArr, str, palindr
 function checkPalindrom(charArr) {
     let isPalindrom = true;
 
-    for (let i = 0, j = charArr.length - 1; i < charArr.length; i++, j--) {
-        if (charArr[i] !== charArr[j]) {
+    const nonSpaceCharArr = charArr.filter(char => char !== ' ');
+
+    for (let i = 0, j = nonSpaceCharArr.length - 1; i < nonSpaceCharArr.length; i++, j--) {
+        if (nonSpaceCharArr[i] !== nonSpaceCharArr[j]) {
             isPalindrom = false;
             break;
         }
