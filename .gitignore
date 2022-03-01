@@ -7,3 +7,4 @@
 /NodeJS/PCAT/models/Image.js
 /NodeJS/PCAT/without_node
 /NodeJS/PCAT/models/node_modules
+/NodeJS/**/node_modules
