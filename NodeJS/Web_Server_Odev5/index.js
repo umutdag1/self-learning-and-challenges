@@ -6,8 +6,10 @@ const server = http.createServer((req, res) => {
 
     fs.readFile(`./views${url}.html`, (err, data) => {
         if (err) {
+            res.statusCode = 200;
             res.end("Error! Not Found");
         } else {
+            res.statusCode = 404;
             res.write(data);
             res.end();
         } 
