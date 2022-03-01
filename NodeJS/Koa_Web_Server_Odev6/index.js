@@ -1,33 +1,39 @@
 const Koa = require('koa');
+const Router = require('koa-router');
 const fs = require('fs');
 
 const app = new Koa();
+const router = new Router();
 
-sendView = async (ctx, next) => {
+router.get('/index', async (ctx, next) => {
     const view = await next();
-    ctx.response.status = view ? 200 : 404;
-    ctx.body = view ? view : "Error! Not Found";
-}
+    ctx.response.status = 200;
+    ctx.body = view;
+});
 
-getView = async (ctx, next) => {
-    const contentView = await next();
-    return contentView ? contentView.toString() : null;
-}
+router.get('/about', async (ctx, next) => {
+    const view = await next();
+    ctx.response.status = 200;
+    ctx.body = view;
+});
+
+router.get('/contact', async (ctx, next) => {
+    const view = await next();
+    ctx.response.status = 200;
+    ctx.body = view;
+});
 
 readView = async (_, next) => {
     const url = await next();
     const filePath = `./views${url}.html`;
     const isFileExist = fs.existsSync(filePath);
 
-    if(isFileExist) {
-        return fs.readFileSync(`./views${url}.html`);
-    } else {
-        return null;
+    if (isFileExist) {
+        return fs.readFileSync(filePath).toString();
     }
 }
 
-app.use(sendView);
-app.use(getView);
+app.use(router.routes());
 app.use(readView);
 app.use(ctx => ctx.url);
 
