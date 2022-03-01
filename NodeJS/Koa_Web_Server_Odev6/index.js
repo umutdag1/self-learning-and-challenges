@@ -23,13 +23,16 @@ router.get('/contact', async (ctx, next) => {
     ctx.body = view;
 });
 
-readView = async (_, next) => {
+readView = async (ctx, next) => {
     const url = await next();
     const filePath = `./views${url}.html`;
     const isFileExist = fs.existsSync(filePath);
 
     if (isFileExist) {
         return fs.readFileSync(filePath).toString();
+    } else {
+        ctx.response.status = 404;
+        ctx.response.body = "Error! Not Found";
     }
 }
 
