@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+/* Initiliazing */
 const DATA = { "name": "Employee 1 Name", "salary": 2000 };
 const NEW_DATA = { "name": "Employee 2 Name", "salary": 4000 };
 const FILE_NAME = 'data';
@@ -24,10 +25,14 @@ updateJSONFile = (name, data) => {
 
 deleteJSONFile = (name) => fs.unlinkSync(`${name}.json`);
 
+
+/* Executing */
 createJSONFile(FILE_NAME, DATA);
+
 console.log("Before Update", readJSONFile(FILE_NAME));
 updateJSONFile(FILE_NAME, NEW_DATA);
 console.log("After Update", readJSONFile(FILE_NAME));
+
 setTimeout(() => {
     deleteJSONFile(FILE_NAME);
     console.log(`${FILE_NAME}.json removed`);
