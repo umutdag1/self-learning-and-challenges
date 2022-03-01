@@ -12,7 +12,7 @@ const onlyStatus = true; // You Can Change This
 /****************************************/
 showResult(onlyCheckOne, onlyStatus);
 
-/* Handling Word Functions */
+/* Handling Functions */
 
 function showResult(onlyCheckOne, onlyStatus) {
     if (!onlyCheckOne) {
