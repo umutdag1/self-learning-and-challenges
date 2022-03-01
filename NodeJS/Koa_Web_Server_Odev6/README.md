@@ -47,6 +47,9 @@ readView = async (_, next) => {
 
     if (isFileExist) {
         return fs.readFileSync(filePath).toString();
+    } else {
+        ctx.response.status = 404;
+        ctx.response.body = "Error! Not Found";
     }
 }
 
