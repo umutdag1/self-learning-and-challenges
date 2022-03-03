@@ -1,15 +1,18 @@
 // Test Case 1
-//const RULES = ["J>B", "B<S", "D>J"];
+// const RULES = ["J>B", "B<S", "D>J"];
 // Test Case 2
-//const RULES = ["J>B", "B<S", "A>B", "B>C", "A<D"];
+// const RULES = ["J>B", "B<S", "A>B", "B>C", "A<D"];
 // Test Case 3
-//const RULES = ["A>B", "B>C", "A<D"];
+// const RULES = ["A>B", "B>C", "A<D"];
 // Test Case 4
-//const RULES = ["A>B", "A<C", "C<Z"];
+// const RULES = ["A>B", "A<C", "C<Z"];
 // Test Case 5
 // const RULES = ["A>B", "B<R", "R<G"];
 // High Result Case
-const RULES = ["J>B", "Z<S", "D>K", "U>I", "L<M"];
+// const RULES = ["J>B", "Z<S", "D>K", "U>I", "L<M"];
+//const RULES = ["J>B", "Z<S", "D>K", "U>I", "L<M", "A>B", "D<B", "G<S"];
+const RULES = ['A>B', 'C>B', 'A<Q'];
+//const RULES = ["A>B","A<D"]; 
 
 const letters = getUniqueArr(
     getLetters()
