@@ -2,7 +2,7 @@ const rowLength = 9;
 const columnLength = 9;
 const quadrantPerRowLength = 3;
 
-const sudokuQuadrants = [
+/*const sudokuQuadrants = [
     "(1,2,3,4,5,6,7,8,9)",
     "(x,x,x,x,x,x,x,x,x)",
     "(6,x,5,x,3,x,x,4,x)",
@@ -12,6 +12,17 @@ const sudokuQuadrants = [
     "(x,x,x,x,x,x,x,x,x)",
     "(x,x,x,x,x,x,x,x,x)",
     "(x,x,x,x,x,x,x,x,9)"
+];*/
+const sudokuQuadrants = [
+    "(1,2,3,4,5,6,7,8,1)",
+    "(x,x,x,x,x,x,x,x,x)",
+    "(x,x,x,x,x,x,x,x,x)",
+    "(x,x,x,x,x,x,x,x,x)",
+    "(x,x,x,x,x,x,x,x,x)",
+    "(x,x,x,x,x,x,x,x,x)",
+    "(x,x,x,x,x,x,x,x,x)",
+    "(x,x,x,x,x,x,x,x,x)",
+    "(x,x,x,x,x,x,x,x,x)"
 ];
 
 const sudokuQuadrantValues = getSudokuQuadrantValues(sudokuQuadrants);
